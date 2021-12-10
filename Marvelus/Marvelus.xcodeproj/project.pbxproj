@@ -17,6 +17,8 @@
 		7873718B2762B7D1000B18ED /* MarvelusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7873718A2762B7D1000B18ED /* MarvelusTests.swift */; };
 		787371952762B7D1000B18ED /* MarvelusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787371942762B7D1000B18ED /* MarvelusUITests.swift */; };
 		787371972762B7D1000B18ED /* MarvelusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787371962762B7D1000B18ED /* MarvelusUITestsLaunchTests.swift */; };
+		787D78D527640578002F41BF /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D78D427640578002F41BF /* Core.framework */; };
+		787D78D627640578002F41BF /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787D78D427640578002F41BF /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5DB0AE4E30C19F3DDB3C557 /* Pods_MarvelusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFADBA2FB65D531750B1167 /* Pods_MarvelusTests.framework */; };
 		EC516CAF43B07AB333329203 /* Pods_Marvelus_MarvelusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AB1637768E986068D8F390 /* Pods_Marvelus_MarvelusUITests.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		787D78A82763F703002F41BF /* Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				787D78D627640578002F41BF /* Core.framework in Frameworks */,
+			);
+			name = Frameworks;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		03AB1637768E986068D8F390 /* Pods_Marvelus_MarvelusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvelus_MarvelusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0EABF252097C54820271D0 /* Pods-Marvelus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelus.debug.xcconfig"; path = "Target Support Files/Pods-Marvelus/Pods-Marvelus.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +72,7 @@
 		787371902762B7D1000B18ED /* MarvelusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		787371942762B7D1000B18ED /* MarvelusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelusUITests.swift; sourceTree = "<group>"; };
 		787371962762B7D1000B18ED /* MarvelusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		787D78D427640578002F41BF /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484C8B39EC1736C03E5DE73 /* Pods_Marvelus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvelus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFADBA2FB65D531750B1167 /* Pods_MarvelusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D04221048CE241B83FAB39 /* Pods-MarvelusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelusTests.debug.xcconfig"; path = "Target Support Files/Pods-MarvelusTests/Pods-MarvelusTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EF826674DB631D97D22E2C0 /* Pods_Marvelus.framework in Frameworks */,
+				787D78D527640578002F41BF /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +112,7 @@
 		4EE99C452FEC8780801DBAC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				787D78D427640578002F41BF /* Core.framework */,
 				8484C8B39EC1736C03E5DE73 /* Pods_Marvelus.framework */,
 				03AB1637768E986068D8F390 /* Pods_Marvelus_MarvelusUITests.framework */,
 				9BFADBA2FB65D531750B1167 /* Pods_MarvelusTests.framework */,
@@ -104,6 +123,7 @@
 		787371672762B7CA000B18ED = {
 			isa = PBXGroup;
 			children = (
+				787D789B2763F6B1002F41BF /* Dependencies */,
 				787371722762B7CA000B18ED /* Marvelus */,
 				787371892762B7D1000B18ED /* MarvelusTests */,
 				787371932762B7D1000B18ED /* MarvelusUITests */,
@@ -154,6 +174,13 @@
 			path = MarvelusUITests;
 			sourceTree = "<group>";
 		};
+		787D789B2763F6B1002F41BF /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		FBFFED1D52C7D1E20FF8FAFA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +191,6 @@
 				A4D04221048CE241B83FAB39 /* Pods-MarvelusTests.debug.xcconfig */,
 				64B493EFE06C08844795ADC0 /* Pods-MarvelusTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,6 +205,7 @@
 				7873716C2762B7CA000B18ED /* Sources */,
 				7873716D2762B7CA000B18ED /* Frameworks */,
 				7873716E2762B7CA000B18ED /* Resources */,
+				787D78A82763F703002F41BF /* Frameworks */,
 			);
 			buildRules = (
 			);

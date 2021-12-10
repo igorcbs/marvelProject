@@ -26,3 +26,25 @@ target 'Marvelus' do
   end
 
 end
+
+def core_pods
+  marvelus_pods
+end
+
+#Core
+target 'Core' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  project 'Core/Core.project'
+  core_pods
+  # Pods for Core
+
+  target 'CoreTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CoreUITests' do
+    # Pods for testing
+  end
+
+end
